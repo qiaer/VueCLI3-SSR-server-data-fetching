@@ -1,9 +1,10 @@
 # vuecli3-ssr-example (server data fetching)
 
 基于VueCLI3 SSR 服务端渲染 
+
 已搭建express node服务器 通过axios进行服务端数据预取渲染首屏 
-开箱即用的模板
-已添加vue-lazyload
+
+开箱即用的模板（已添加vue-lazyload）
 
 ## Example
 
