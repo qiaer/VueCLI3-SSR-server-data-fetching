@@ -24,5 +24,4 @@ npm run build:win
 node server
 
 ## Thanks
-
-# VueCLI3-SSR-server-data-fetching-
+官方 Vue SSR指南 [https://ssr.vuejs.org]

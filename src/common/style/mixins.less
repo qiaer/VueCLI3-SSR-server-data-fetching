@@ -1,0 +1,36 @@
+//----------------------------
+//
+//  mixins.less v0.1.6
+//  http://mixinsless.com/
+//  Reuse snippets & Cross-browser private properties snippets.
+//----------------------------
+
+// px to rem
+// 750 设计稿
+@rem: 75rem;
+
+/*背景色*/
+@theme-background: #ffffff;//rgb(233,236,241);
+
+// 设置背景图片
+// -------------------------
+.set-background-image(@dir, @imageName) {
+  background: url('@{dir}/@{imageName}') center center no-repeat;
+  background-size: contain;
+}
+
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.line-overflow(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+

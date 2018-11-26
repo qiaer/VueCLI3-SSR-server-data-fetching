@@ -1,0 +1,90 @@
+@import "normalize.css";
+@import 'mixins.less';
+
+*, ::after, ::before {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  background-color: @theme-background;
+  color: #333;
+  font-family: PingFangSC-Regular, 'Source Han Sans CN', 'noto sans', 'Microsoft Yahei', 'Helvetica Neue', Tahoma, Arial,  'Hiragino Sans GB',  sans-serif;
+  line-height: 1.2;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+  text-size-adjust: none;
+}
+
+body, button, dd, dl, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none
+}
+
+ul, ul > li, dl, dt, dd {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+a, img {
+  -webkit-touch-callout: none;
+}
+
+button, input, select, textarea {
+  outline: 0;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* vue-lazyload 加载占位样式 start */
+img[lazy=loading] {
+  background-color: #f6f6f6; 
+}
+img[lazy=error] {
+  background-color: #f6f6f6; 
+}
+/* end */
+
+textarea {
+  resize: none;
+}
+
+select {
+  background-color: transparent;
+  appearance: none
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+  appearance: button
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 100px #fff inset
+}
