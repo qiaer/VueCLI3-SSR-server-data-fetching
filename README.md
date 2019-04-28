@@ -25,4 +25,5 @@ npm run build:win
 node server
 
 ## Thanks
-官方 Vue SSR指南 [https://ssr.vuejs.org]
+(个人博客详细步骤讲解) [http://zuxiaoke.com/article?id=11]
+(官方 Vue SSR指南)[https://ssr.vuejs.org]
